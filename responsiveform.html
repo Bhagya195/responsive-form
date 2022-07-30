@@ -1,253 +1,65 @@
 <!DOCTYPE html>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
-     :root {
-        --color-white: #f3f3f3;
-        --color-darkblue: #1b1b32;
-        --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-        --color-green: #37af65;
-    }
-    
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.4;
-        color: var(--color-white);
-        margin: 0;
-    }
-    
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        background: rgba(234, 227, 236, 0.267);
-        background-image: url("tcsform.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    h1 {
-        font-weight: 500;
-        line-height: 1.2;
-    }
-    
-    p {
-        font-size: 1.125rem;
-    }
-    
-    h1 {
-        color: rgb(9, 247, 227);
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-    }
-    
-    p {
-        color: hwb(67 91% 6%);
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-    }
-    
-    label {
-        display: flex;
-        align-items: center;
-        font-size: 1.125rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    input,
-    button,
-    select,
-    textarea {
-        margin: 0;
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-    }
-    
-    button {
-        border: none;
-    }
-    
-    .container {
-        width: 100%;
-        margin: 3.125rem auto 0 auto;
-    }
-    
-    @media (min-width: 576px) {
-        .container {
-            max-width: 540px;
-        }
-    }
-    
-    @media (min-width: 768px) {
-        .container {
-            max-width: 720px;
-        }
-    }
-    
-    .header {
-        padding: 0 0.625rem;
-        margin-bottom: 1.875rem;
-    }
-    
-    .description {
-        font-style: italic;
-        font-weight: 200;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    }
-    
-    .clue {
-        margin-left: 0.25rem;
-        font-size: 0.9rem;
-        color: #e4e4e4;
-    }
-    
-    .text-center {
-        text-align: center;
-    }
-    /* form */
-    
-    form {
-        background: var(--color-darkblue-alpha);
-        padding: 2.5rem 0.625rem;
-        border-radius: 0.25rem;
-    }
-    
-    @media (min-width: 480px) {
-        form {
-            padding: 2.5rem;
-        }
-    }
-    
-    .form-group {
-        margin: 0 auto 1.25rem auto;
-        padding: 0.25rem;
-    }
-    
-    .form-control {
-        display: block;
-        width: 100%;
-        height: 2.375rem;
-        padding: 0.375rem 0.75rem;
-        color: #495057;
-        background-color: #fff;
-        background-clip: padding-box;
-        border: 1px solid #ced4da;
-        border-radius: 0.25rem;
-        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    }
-    
-    .form-control:focus {
-        border-color: #80bdff;
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    }
-    
-    .input-radio,
-    .input-checkbox {
-        display: inline-block;
-        margin-right: 0.625rem;
-        min-height: 1.25rem;
-        min-width: 1.25rem;
-    }
-    
-    .input-textarea {
-        min-height: 120px;
-        width: 100%;
-        padding: 0.625rem;
-        resize: vertical;
-    }
-    
-    .submit-button {
-        display: block;
-        width: 100%;
-        padding: 0.75rem;
-        background: var(--color-green);
-        color: inherit;
-        border-radius: 2px;
-        cursor: pointer;
-    }
-</style>
+
 <html>
 
 <head>
     <title>TCS Exam Registration Page</title>
     <link rel="icon" type="image/x-icon" href="tcsbg.png">
 </head>
-<div class="container">
-    <header class="header">
-        <h1 id="title" class="text-center">TCS Registration Form</h1>
-        <p class="text-center">Welcome to TCS Online registration platform :) </p>
-        <img src="tcs.jpg" alt="TCS Logo" width="700" height="300">
-    </header>
-    <form id="tcs-form">
-        <div class="form-group">
+
+<body style="background-image: url('TCS-Mega-Walkin-Recruitment-Drive.jpg');">
+
+    <div>
+
+        <header>
+            <h1>TCS Registration Form</h1>
+            <p>Welcome to TCS Online registration platform :) </p>
+            <img src="tcs.jpg" alt="TCS Logo" width="700" height="300">
+
+        </header>
+        <form>
+
             <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
-        </div>
-        <div class="form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required /><br> <br>
+
             <label id="rollno-label" for="rollno">Roll Number</label>
-            <input type="number" name="rollno" id="rollno" class="form-control" placeholder="Enter your Email" required />
-        </div>
+            <input type="number" name="rollno" id="rollno" class="form-control" placeholder="Enter your Email" required /><br> <br> Parent details
+            <textarea id="details" class="input-textarea" name="details" placeholder="Enter your parent details here..."></textarea><br> <br>
 
-        <div class="form-group">
-            Parent details
-            <textarea id="details" class="input-textarea" name="details" placeholder="Enter your parent details here..."></textarea>
-        </div>
-        <div class="form-group">
             <label id="aadhar-label" for="aadhar">AAdhar Number</label>
-            <input type="number" name="aadhar" id="rollno" class="form-control" size="16" placeholder="Enter your Aadhar Number.36" required />
-        </div>
+            <input type="number" name="aadhar" id="rollno" class="form-control" size="16" placeholder="Enter your Aadhar Number.36" required /><br> <br> Address
+            <textarea id="address" class="input-textarea" name="address" placeholder="Enter your address here..."></textarea><br> <br>
+            <label id="quali-label" for="qualifications">Qualifications</label><br>
+            <input type="radio" id="qualifications" name="qualifications" value="BTECH">
+            <label for="btech">BTECH</label><br>
+            <input type="radio" id="qualifications" name="qualifications" value="MTECH">
+            <label for="mtech">MTECH</label><br> <br><input type="checkbox" id="1" name="1" value="1">
+            <label for="1"> AI</label><br>
+            <input type="checkbox" id="2" name="2" value="2">
+            <label for="2"> Machine learnng</label><br>
+            <input type="checkbox" id="3" name="3" value="3">
+            <label for="3"> Robotics</label><br><br> <br>
 
-        <div class="form-group">
-            Address
-            <textarea id="address" class="input-textarea" name="address" placeholder="Enter your address here..."></textarea>
-        </div>
-        <div class="form-group">
-            Qualifications
-            <textarea id="qualifications" class="input-textarea" name="qualifications" placeholder="Enter your qualifications here..."></textarea>
-        </div>
-
-        <div class="form-group">
-            Previous courses you have completed...
-            <textarea id="courses" class="input-textarea" name="courses" placeholder="Enter your courses here..."></textarea>
-        </div>
-        <div class="form-group">
             <label id="xcgpa-label" for="xcgpa">X CGPA</label>
-            <input type="number" name="xcgpa" id="xcgpa" class="form-control" placeholder="Enter your X CGPA" required />
-        </div>
-        <div class="form-group">
+            <input type="number" name="xcgpa" id="xcgpa" class="form-control" placeholder="Enter your X CGPA" required /><br> <br>
+
             <label id="xiicgpa-label" for="xiicgpa">XII CGPA</label>
-            <input type="number" name="xiicgpa" id="xiicgpa" class="form-control" placeholder="Enter your XII CGPA" required />
-        </div>
-        <div class="form-group">
+            <input type="number" name="xiicgpa" id="xiicgpa" class="form-control" placeholder="Enter your XII CGPA" required /><br> <br>
+
             <label id="resume-label" for="resume">Upload your Resume</label>
-            <input type="file" name="resume" id="resume" class="form-control" />
+            <input type="file" name="resume" id="resume" class="form-control" /><br> <br>
 
-        </div>
-        <div class="form-group">
             <label id="photo-label" for="photo">Upload Photo</label>
-            <input type="file" name="photo" id="photo" class="form-control" />
-        </div>
+            <input type="file" name="photo" id="photo" class="form-control" /><br> <br>
 
-        <div class="form-group">
-            <button type="submit" id="submit" class="submit-button">
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
         Submit
       </button>
-        </div>
-    </form>
-</div>
+            </div>
+        </form>
+
+    </div>
+</body>
 
 </html>
